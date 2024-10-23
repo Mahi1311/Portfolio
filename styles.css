@@ -1,0 +1,231 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('background-image.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Cover the entire background */
+}
+
+header {
+    background: #6a0dad; /* Purple background */
+    color: white; /* White text */
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d5006d; /* Darker pink on hover */
+}
+
+.welcome-section {
+    background-color: white; /* White background */
+    color: black; /* Black text for better readability */
+    padding: 50px 20px; /* Added padding */
+    border: 2px solid #6a0dad; /* Purple border */
+    border-radius: 10px; /* Rounded corners for aesthetics */
+    text-align: center; /* Centered text */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.welcome-title {
+    font-size: 2.5em; /* Larger title */
+    margin: 10px 0; /* Margin for spacing */
+    color: #6a0dad; /* Purple color for the title */
+    font-family: 'Georgia', serif; /* Elegant font style */
+}
+
+.welcome-section p {
+    font-size: 1.2em; /* Increased font size for readability */
+    margin-top: 15px; /* Space above the paragraph */
+    color: black; /* Black text for the paragraph */
+}
+
+
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #fff; /* White border around profile pic */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+
+.section {
+    padding: 30px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.paintings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Space between images */
+}
+
+.paintings img {
+    width: 150px; /* Reduced width */
+    height: 100px; /* Reduced height */
+    object-fit: cover; /* Ensures the image fills the space */
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.paintings img:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+
+.slider {
+    position: relative;
+    max-width: 150px; /* Adjust size to make it smaller */
+    margin: 20px auto; /* Space around the slider */
+}
+
+.slider img {
+    width: 100%; /* Ensures the image scales with the slider */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    transition: opacity 0.5s ease; /* Smooth transition */
+}
+
+
+
+
+.slider-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px; /* Added margin */
+}
+
+button {
+    background: #6a0dad; /* Purple button */
+    color: white; /* White text */
+    border: none;
+    padding: 10px 20px; /* Padding for buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer cursor for buttons */
+    transition: background 0.3s; /* Transition for hover effect */
+}
+
+button:hover {
+    background: #5c0c9e; /* Darker purple on hover */
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #6a0dad;
+    color: white;
+}
+.education-table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Remove space between borders */
+    margin-top: 20px; /* Space above the table */
+}
+
+.education-table th,
+.education-table td {
+    border: 1px solid #6a0dad; /* Purple border */
+    padding: 12px; /* Padding for cells */
+    text-align: left; /* Align text to the left */
+}
+
+.education-table th {
+    background-color: #6a0dad; /* Purple background for header */
+    color: white; /* White text for header */
+}
+
+.education-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light grey background for even rows */
+}
+
+.education-table tr:hover {
+    background-color: #e6e6e6; /* Light grey background on hover */
+}
+.skills-container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping of skills */
+    justify-content: center; /* Center the skills */
+    margin-top: 20px; /* Space above the skills section */
+}
+
+.skill {
+    background-color: #ffcccb; /* Light pink background for each skill */
+    color: white; /* White text */
+    border-radius: 50%; /* Make the skill circles */
+    width: 80px; /* Width of each circle (slightly larger) */
+    height: 80px; /* Height of each circle (slightly larger) */
+    display: flex; /* Center the text */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    margin: 10px; /* Space around each circle */
+    font-size: 16px; /* Slightly larger font size for readability */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: background-color 0.3s, transform 0.3s; /* Transition for color and scale */
+}
+
+.skill:hover {
+    background-color: #6a0dad; /* Change to purple on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+.languages-container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping of languages */
+    justify-content: center; /* Center the languages */
+    margin-top: 20px; /* Space above the languages section */
+}
+
+.language {
+    background-color: #ffcccb; /* Light pink background */
+    width: 100px; /* Width of each square */
+    height: 100px; /* Height of each square */
+    display: flex; /* Center the content */
+    flex-direction: column; /* Stack image and text */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    margin: 10px; /* Space around each square */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: background-color 0.3s; /* Transition for background color */
+}
+
+.language img {
+    width: 60%; /* Adjust image size to fit */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.language span {
+    margin-top: 5px; /* Space between image and text */
+    font-size: 14px; /* Font size for language name */
+    color: #333; /* Dark color for text */
+}
+
+.language:hover {
+    background-color: #6a0dad; /* Change to purple on hover */
+    color: white; /* Change text color to white on hover */
+}
